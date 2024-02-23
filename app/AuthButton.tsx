@@ -14,5 +14,12 @@ export const LoginButton = () => {
 };
 
 export const LogoutButton = () => {
-  return <button onClick={() => signOut()}>Logout</button>;
+  return (
+    <button
+      className="bg-redSecondary border-b-4  border-redSecondary text-white text-md ease-in duration-200 p-2 px-20 mb-5 ml-2 rounded  shadow-3xlactive:translate-y-[2px] active:border-b-2 "
+      onClick={() => signOut()}
+    >
+      Logout
+    </button>
+  );
 };
