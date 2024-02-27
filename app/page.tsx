@@ -15,9 +15,14 @@ export default async function Home() {
     <div className="bg-white">
       <Banner />
       <h1 className="text-black">
-        {session?.user
-          ? "Authentificated" + session?.user.email
-          : "not authentificated"}
+        {session?.user ? (
+          <>
+            {console.log(session.user)}
+            Authentificated {session.user.email} {JSON.stringify(session.user)}
+          </>
+        ) : (
+          "not authentificated"
+        )}
       </h1>
       {/* <div>{!session?.user ? <LoginButton /> : <LogoutButton />} </div> */}
       <div className="px-5">
