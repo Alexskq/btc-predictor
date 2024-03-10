@@ -18,6 +18,9 @@ export default function Page() {
         <Score />
         <Timer />
       </div>
+      <div className="mx-auto bg-white w-[400px] rounded-xl p-4 shadow-md flex justify-between mb-5 border">
+        <Game />
+      </div>
     </div>
   );
 }
