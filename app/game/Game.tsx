@@ -5,7 +5,6 @@ export default async function Game() {
   if (!response.ok) {
     throw new Error("Network response was not ok");
   }
-
   const data = await response.json();
   // console.log(data.bpi.USD.rate_float);
   const price = parseInt(data.bpi.USD.rate_float);
