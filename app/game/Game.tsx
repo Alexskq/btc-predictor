@@ -10,7 +10,8 @@ export default async function Game() {
   const price = parseInt(data.bpi.USD.rate_float);
   // console.log(price);
   return (
-    <div className="relative mx-auto bg-white max-w-4xl h-[180px] rounded-xl p-4 flex justify-center mb-5 w-[400px]">
+    // <div className="relative mx-auto bg-white max-w-4xl h-[180px] rounded-xl p-4 flex justify-center mb-5 w-[400px]">
+    <div className="relative mx-auto bg-white w-[388px] h-[180px] rounded-xl p-4 flex justify-center mb-5 max-w-4xl">
       <span className="absolute top-4 left-4 text-md font-semibold text-zinc-800">
         BTC price in USD
       </span>

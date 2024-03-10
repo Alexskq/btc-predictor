@@ -5,6 +5,7 @@ import Timer from "./Timer";
 
 import { LogoutButton } from "../AuthButton"; // Import the LogoutButton component
 import { SessionProvider } from "next-auth/react";
+import GuessButton from "./GuessButton";
 
 export default function Page() {
   return (
@@ -20,6 +21,10 @@ export default function Page() {
       </div>
       <div className="mx-auto bg-white w-[400px] rounded-xl p-4 shadow-md flex justify-between mb-5 border">
         <Game />
+        {/* <GuessButton /> */}
+      </div>
+      <div className="mx-auto bg-white w-[400px] rounded-xl p-4 shadow-md flex justify-between mb-5 border">
+        <GuessButton />
       </div>
     </div>
   );
